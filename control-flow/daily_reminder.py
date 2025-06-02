@@ -19,4 +19,4 @@ match priority:
         elif priority == "low" and time_bound == "no":
             print(f"{task} is a is a low priority task. Consider completing it when you have free time.") 
     case _:
-        print("You have entered an invalid input")
+        print("You have provided an invalid input")
