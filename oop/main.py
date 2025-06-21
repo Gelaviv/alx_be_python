@@ -1,6 +1,7 @@
 from book_class import Book
 from library_system import Book, EBook, PrintBook, Library
 from polymorphism_demo import Shape, Rectangle, Circle
+from class_static_methods_demo import Calculator
 
 
 # Magic methods test code
@@ -52,6 +53,17 @@ def main():
     for shape in shapes:
         print(f"The area of the {shape.__class__.__name__} is: {shape.area()}")
 
+
+
+# Static and class method test codes
+def main():
+    # Using the static method
+    sum_result = Calculator.add(10, 5)
+    print(f"The sum is: {sum_result}")
+
+    # Using the class method
+    product_result = Calculator.multiply(10, 5)
+    print(f"The product is: {product_result}")
 
 
 
